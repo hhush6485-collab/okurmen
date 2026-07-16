@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function day(){
+        let day = Number(document.getElementById("day").value)
+        if(day == 1){
+            alert("monday")
+        }
+        if(day == 2){
+            alert("tusday")
+        }
+        if(day == 3){
+            alert("wednesday")
+        }
+        if(day == 4){
+            alert("thursday")
+        }
+        if(day == 5){
+            alert("friday")
+        }
+        if(day == 6){
+            alert("saturday")
+        }
+        if(day == 7){
+            alert("sunday")
+        }
+    
+        else{
+            alert("NO")
+        }
+    
+    }
+    </script>
+</head>
+<body>
+    <label for="day">enter day of the week</label>
+    <input type="number" name="day" id="day">
+    <button onclick="day()">chek</button>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 100%;
+            opacity: 0.3;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .active {
+            opacity: 1;
+        }
+
+        button {
+            width: 200px;
+            height: 200px;
+            font-size: xx-large;
+        }
+    </style>
+    <script>
+        let light = 0
+        function next() {
+
+            let number = light % 3
+            if (number == 0) {
+                document.getElementById("green").classList.remove("active")
+                document.getElementById("red").classList.add("active")
+            }
+            if (number == 1) {
+                document.getElementById("yellow").classList.add("active")
+                document.getElementById("red").classList.remove("active")
+            }
+            if (number == 2) {
+                document.getElementById("green").classList.add("active")
+                document.getElementById("yellow").classList.remove("active")
+            }
+
+            light = light + 1
+        }
+    </script>
+</head>
+
+<body>
+    <div class="red" id="red"></div>
+    <div class="yellow" id="yellow"></div>
+    <div class="green" id="green"></div>
+    <button onclick="next()">Next light</button>
+</body>
+</html>

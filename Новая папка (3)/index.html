@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>siuuuu</title>
+    <script>
+        let start = 0
+        function add(){
+            start = start + 1
+            document.getElementById("counter").innerText = start
+        }
+        function subtract(){
+            start = start - 1
+            document.getElementById("counter").innerText = start
+        }
+        function multiply(){
+            // asterisk = *
+            start = start * 2
+            document.getElementById("counter").innerText = start
+        }
+        function divide(){
+           start = start / 2
+           document.getElementById("counter").innerText = start
+        }
+    </script>
+</head>
+<body>
+    <h1 id="counter">0</h1>
+    <button onclick="add()">+</button>
+    <button onclick="subtract()">-</button>
+    <button onclick="multiply()">x2</button>
+    <button onclick="divide()">:2</button>
+    <input type="number" name="number" id="number">
+</body>
+</html>

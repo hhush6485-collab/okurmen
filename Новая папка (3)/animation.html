@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BIL</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: black;
+        }
+
+        .b {
+            animation: spin 2s infinite;
+            color: rgb(255, 0, 0);
+            font-size: 60px;
+        }
+
+        .i {
+            animation: big 1s infinite;
+            color: rgb(8, 0, 255);
+            font-size: 60px;
+        }
+
+        .l {
+            animation: down 1.5s infinite;
+            color: rgb(81, 255, 0);
+            font-size: 60px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes big {
+            50% { font-size: 100px; }
+        }
+
+        @keyframes down {
+            50% { transform: translateY(40px); }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="b">B</h1>
+    <h1 class="i">I</h1>
+    <h1 class="l">L</h1>
+    <h1 class="a"></h1>
+    <h1 class="L"></h1>
+</body>
+</html>
